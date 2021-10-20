@@ -1,5 +1,7 @@
 package com.raymond;
 
+import sun.net.www.http.HttpClient;
+
 import java.io.*;
 import java.util.ArrayList;
 
@@ -20,7 +22,7 @@ public class Main {
             while ((readLine = bufferedReader.readLine()) != null) {
                 if (readLine.startsWith("![](")){
                     String substring = readLine.substring(4, readLine.length() - 1);
-                    System.out.println(substring);
+
                 }
             }
         } catch (IOException e) {
