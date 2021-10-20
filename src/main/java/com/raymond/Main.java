@@ -19,7 +19,8 @@ public class Main {
             String readLine = null;
             while ((readLine = bufferedReader.readLine()) != null) {
                 if (readLine.startsWith("![](")){
-                    System.out.println(readLine);
+                    String substring = readLine.substring(4, readLine.length() - 1);
+                    System.out.println(substring);
                 }
             }
         } catch (IOException e) {
